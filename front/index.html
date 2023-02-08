@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <nav class="header-navigation">
+                <a href="#" class="header-navigation_item">Главная</a>
+                <a href="#" class="header-navigation_item">О сайте</a>
+                <a href="#" class="header-navigation_item last">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main-content">
+            <div class="leftside">
+                <div class="leftside-header">
+                    <p class="leftside-header_title">Списки задач: </p>
+                    <div class="leftside-menu">
+                        <div class="leftside-sort_btn"></div>
+                        <div class="leftside-add_btn"></div>
+                    </div>
+                </div>
+                <ul class="leftside-content" id="leftside">
+                    <li class="leftside-item">
+                        <div class="item-content">
+                            <div class="leftside-item_done"></div>
+                            <div class="item-title">
+                                <p class="item-title_text">Задачи на день</p>
+                                <p class="item-date">10.06</p>
+                            </div>
+                        </div>
+                        <p class="item-progress">66%</p>
+                    </li>
+                    <li class="leftside-item">
+                        <div class="item-content">
+                            <div class="leftside-item_done"></div>
+                            <div class="item-title">
+                                <p class="item-title_text">Задачи на неделю</p>
+                                <p class="item-date">10.06</p>
+                            </div>
+                        </div>
+                        <p class="item-progress">72%</p>
+                    </li>
+                    <div class="leftside-item">
+                        <div class="item-content">
+                            <div class="leftside-item_done"></div>
+                            <div class="item-title">
+                                <p class="item-title_text">Задачи на месяц</p>
+                                <p class="item-date">10.06</p>
+                            </div>
+                        </div>
+                        <p class="item-progress">32%</p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="middle">
+                <div class="middle-header">
+                    <p class="middle-header_title">Задачи: </p>
+                    <div class="middle-add_btn"></div>
+                </div>
+                <ul class="middle-content">
+                    <li class="task-item task-not-done">
+                        <div class="task-content"> 
+                            <div class="task-title">
+                                <p class="task-title_text">Выбросить мусор</p>
+                                <p class="task-date">10.06</p>
+                            </div>
+                            <div class="task-status_field">
+                                <span class="task-status">Не выполнено</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="task-item task-done">
+                        <div class="task-content"> 
+                            <div class="task-title">
+                                <p class="task-title_text">Помыть посуду</p>
+                                <p class="task-date">10.06</p>
+                            </div>
+                            <div class="task-status_field">
+                                <span class="task-status">Выполнено</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rightside">
+                <div class="rightside-header">
+                    <p class="leftside-header_title">Описание: </p>
+                </div>
+                <form action="">
+                    <div class="rightside-content"> 
+                        <div class="rightside-task_description">
+                            FORM
+                        </div>
+
+                        <div class="rightside-task_btns">
+                            <button class="rightside-delete_btn">Удалить</button>
+                            <button class="rightside-save_btn btn-disabled" type="submit">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
