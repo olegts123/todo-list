@@ -26,8 +26,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-venv/
-.idea/
 
 ## Custom
 data/
+venv/
+.idea/
+todo_list/SECRETS.py
