@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <title>Главная страница</title>
-</head>
-<body>
-    <header class="header">
-        <div class="header-content">
-            <nav class="header-navigation">
-                <a href="#" class="header-navigation_item">Главная</a>
-                <a href="#" class="header-navigation_item">О сайте</a>
-                <a href="#" class="header-navigation_item last">Войти</a>
-            </nav>
-        </div>
-    </header>
-    <section class="main">
-        <div class="main-content">
+{% extends 'todo/base.html' %}
+
+{% block content %}
+<div class="main-content">
             <div class="leftside">
                 <div class="leftside-header">
                     <p class="leftside-header_title">Списки задач: </p>
@@ -70,7 +53,7 @@
                 </div>
                 <ul class="middle-content">
                     <li class="task-item task-not-done">
-                        <div class="task-content"> 
+                        <div class="task-content">
                             <div class="task-title">
                                 <p class="task-title_text">Выбросить мусор</p>
                                 <p class="task-date">10.06</p>
@@ -81,7 +64,7 @@
                         </div>
                     </li>
                     <li class="task-item task-done">
-                        <div class="task-content"> 
+                        <div class="task-content">
                             <div class="task-title">
                                 <p class="task-title_text">Помыть посуду</p>
                                 <p class="task-date">10.06</p>
@@ -99,7 +82,7 @@
                     <p class="leftside-header_title">Описание: </p>
                 </div>
                 <form action="">
-                    <div class="rightside-content"> 
+                    <div class="rightside-content">
                         <div class="rightside-task_description">
                             FORM
                         </div>
@@ -112,8 +95,4 @@
                 </form>
             </div>
         </div>
-    </section>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+{% endblock %}

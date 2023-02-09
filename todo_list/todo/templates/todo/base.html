@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'todo/css/styles.css' %}" type="text/css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <nav class="header-navigation">
+                <a href="/" class="header-navigation_item">Главная</a>
+                <a href="/about" class="header-navigation_item">О сайте</a>
+                <a href="#" class="header-navigation_item last">Войти</a>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        {% block content %}
+        {% endblock %}
+    </section>
+    </div>
+    <script src="{% static 'todo/js/script.js' %}"></script>
+</body>
+</html>
